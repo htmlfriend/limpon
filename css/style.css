@@ -371,6 +371,10 @@ p {
   font-size: 14px;
 }
 
+.content-app.title-h2 {
+  margin-bottom: 36px;
+}
+
 /* page-screen-preview */
 
 .page-screen-preview,
@@ -612,9 +616,11 @@ p {
 /* page-softwere */
 .page-softwere {
   padding: 109px 0 156px 0;
+  position: relative;
+  overflow: hidden;
 }
 
-.page-softwere-icon {
+.setting-icon {
   display: block;
   width: 126px;
   height: 133px;
@@ -646,9 +652,9 @@ p {
 .page-softwere-list::-webkit-scrollbar-track-piece {
   background-color: #f3f6ff;
 }
-/* .page-softwere-list::-webkit-scrollbar-button {
-  background-color: blue;
-} */
+.page-softwere-list::-webkit-scrollbar-button {
+  background-color: #1085e4;
+}
 /* .page-softwere-list::-webkit-scrollbar-corner {
   background-color: yellow;
 }
@@ -676,4 +682,129 @@ p {
 
 .page-softwere-flex > div {
   flex-basis: 55%;
+}
+
+.softwere-pic {
+  display: block;
+  width: 1002px;
+  height: 818px;
+  background-image: url("../image/softwere.png");
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+/* page-app */
+
+.page-app {
+  padding: 69px 0 82px 0;
+}
+
+.page-app .wrap {
+  position: relative;
+}
+
+.page-app-text {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #c4d2dd;
+  margin-top: 27px;
+  margin-bottom: 20px;
+  letter-spacing: 3.5px;
+}
+
+.page-app-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.page-app-list > li {
+  display: inline;
+}
+
+.page-app-list > li > a {
+  display: inline-block;
+  width: 172px;
+  height: 68px;
+  background-image: url("../image/app2.png");
+  background-repeat: no-repeat;
+}
+
+.page-app-android {
+  background-position: 0 0;
+}
+
+.page-app-ios {
+  background-position: -190px 0px;
+  margin-left: 10px;
+}
+
+.content-app {
+  width: 55%;
+}
+
+a.video-app {
+  position: absolute;
+  right: -168px;
+  top: -50px;
+}
+
+/* page-screen */
+
+.page-analytics {
+  background-image: url("../image/screen4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 117px 0 137px 0;
+}
+
+.flex-analytics {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-analytics .title-h2 {
+  margin-top: 12px;
+  margin-bottom: 26px;
+  max-width: 766px;
+}
+
+.flex-analytics-text {
+  margin-bottom: 53px;
+}
+
+.flex-analytics > div {
+  flex-basis: 53%;
+}
+
+/* page-screen */
+
+.page-screen {
+  background-image: url("../image/limbo6.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 117px 0 137px 0;
+}
+
+.page-screen .title-h2 {
+  margin-top: 12px;
+  margin-bottom: 26px;
+  max-width: 766px;
+}
+
+.screen-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-screen-text {
+  margin-bottom: 53px;
+}
+
+.screen-flex > div {
+  flex-basis: 53%;
 }
